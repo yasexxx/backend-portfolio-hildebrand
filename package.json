@@ -1,0 +1,40 @@
+{
+  "name": "backend-portfolio-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A simple backend implementation using CMS for portfolio.",
+  "scripts": {
+    "gcp-build": "strapi build --clean",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build --clean",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "knex": "<0.20.0",
+    "pg": "^8.5.1",
+    "strapi": "3.4.5",
+    "strapi-admin": "3.4.5",
+    "strapi-connector-bookshelf": "3.4.5",
+    "strapi-plugin-content-manager": "3.4.5",
+    "strapi-plugin-content-type-builder": "3.4.5",
+    "strapi-plugin-email": "3.4.5",
+    "strapi-plugin-upload": "3.4.5",
+    "strapi-plugin-users-permissions": "3.4.5",
+    "strapi-provider-upload-cloudinary": "^3.4.5",
+    "strapi-utils": "3.4.5"
+  },
+  "author": {
+    "name": "Hildebrand Elias Ligtas"
+  },
+  "strapi": {
+    "uuid": false
+  },
+  "engines": {
+    "node": ">=10.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "images_portfolio",
+  "info": {
+    "name": "Image Portfolios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_url": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_profiles",
+  "info": {
+    "name": "Main Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "profile_description": {
+      "type": "text"
+    },
+    "profile_pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "profile_header_text": {
+      "type": "string"
+    },
+    "about_profile_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "about_me_description": {
+      "type": "text"
+    },
+    "profile_email": {
+      "type": "email"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "social_links": {
+      "type": "json"
+    },
+    "custom_website_url": {
+      "type": "string"
+    },
+    "resume_educations": {
+      "collection": "resume-details"
+    },
+    "resume_experiences": {
+      "collection": "resume-experience"
+    },
+    "resume_skills": {
+      "collection": "resume-skill"
+    },
+    "custom_website_text": {
+      "type": "string"
+    }
+  }
+}

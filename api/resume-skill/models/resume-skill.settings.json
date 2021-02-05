@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resume_skills",
+  "info": {
+    "name": "Resume Skill",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "score": {
+      "min": 1,
+      "max": 5,
+      "type": "integer",
+      "default": 5
+    },
+    "progress": {
+      "type": "integer",
+      "default": 100,
+      "max": 100,
+      "min": 0
+    },
+    "bar_color": {
+      "type": "string",
+      "default": "black"
+    },
+    "text_color": {
+      "type": "string",
+      "default": "black"
+    }
+  }
+}

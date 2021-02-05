@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resume_details",
+  "info": {
+    "name": "Resume Education",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "degree": {
+      "type": "string"
+    },
+    "university": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "university_url": {
+      "type": "string"
+    }
+  }
+}

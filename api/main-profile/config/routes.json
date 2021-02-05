@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/main-profile",
+      "handler": "main-profile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/main-profile",
+      "handler": "main-profile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/main-profile",
+      "handler": "main-profile.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

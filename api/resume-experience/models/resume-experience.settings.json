@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resume_experiences",
+  "info": {
+    "name": "Resume Experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "company_name": {
+      "type": "string"
+    },
+    "end_year": {
+      "type": "string"
+    },
+    "start_year": {
+      "type": "string"
+    },
+    "experience_json": {
+      "type": "json"
+    }
+  }
+}
